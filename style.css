@@ -1,0 +1,145 @@
+body{
+    text-align: center;
+    background-color: #faf9f8;
+  }
+p, li{
+    font-weight: 400;
+}
+
+.rule{
+    width: 100%;
+    margin-top: 0px;
+}
+
+li{
+    cursor: pointer;
+    list-style: none;
+}
+
+.center > img{
+    width: 80px;
+}
+
+.box{
+    position: relative;
+}
+
+.searchRow{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.input {
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: 3px solid #6c6c6c;
+    border-radius: 50%;
+    box-sizing: border-box;
+    font-family: Comic Sans MS;
+    font-size: 16px;
+    color: #6c6c6c;
+    outline: none;
+    transition: all ease-out .5s;
+}
+.box:hover input{
+    width: 300px;
+    background: #ffffff;
+    border-radius: 20px;
+}
+.icon{
+    position: absolute;
+    top: 54%;
+    right: -4px;
+    transform: translate(-50%,-50%);
+    font-size: 16px;
+    color: #000000;
+    transition: .2s;
+}
+.box:hover i{
+    opacity: 0;
+    z-index: -1;
+}
+
+/* Hero ki CSS */
+
+
+.heroRow {
+    height: 80vh !important;
+}
+
+.heroRow > div {
+    height: 100%;
+    width: 100%;
+}
+
+
+.hero-text {
+    background-image: url('https://static.zara.net/assets/public/dfbd/7c62/200843ef8fac/22994c2447c5/image-landscape-fill-7a05c0de-c1db-4299-b9d5-07a03d2f893f-default_0.jpg?ts=1718809904873&w=2140');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: xx-large !important;
+    padding: 2rem;
+    /* color: #6c6c75; */
+    color: black !important;
+}
+
+.hero-text > h1, .hero-text > h2 {
+    font-size: 5vw !important;
+    padding: 10px;
+}
+
+.logo-container > img {
+    width: 50px;
+}
+
+.heroRow > div > div {
+    height: inherit;
+}
+
+.heroImage > img {
+    height: inherit;
+    width: inherit;
+    object-fit: fill;
+}
+
+.hero-text {
+    position: relative;
+    padding: 2rem;
+    color: black;
+}
+
+.hero-text::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Adjust the height to control the size of the tint */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent); /* Gradient from black to transparent */
+    pointer-events: none; /* Ensure the pseudo-element doesn't interfere with mouse events */
+}
+/* product section css */
+.product{
+    /* background-image: url(./images/hnm\ logopro-bg.png); */
+    /* background-repeat:; */
+    /* background-size: cover; */
+    background-color:#faf9f8;
+    animation-name: marquee;
+    animation-duration: 100s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes marquee {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.procard{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    
+}
